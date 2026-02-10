@@ -1,1 +1,1 @@
-this is the correction of exercice 2 : multiply by 2
+this is the correction of exercice 3 : isEven
