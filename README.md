@@ -1,1 +1,1 @@
-this is the correction of exercice 5 : sum all numbers
+this is the correction of exercice 6 : remove duplicates
