@@ -1,1 +1,1 @@
-this repo is made for the 100 algortihm challenge to be finished before thursday
+this is the correction of exercice 2 : multiply by 2
