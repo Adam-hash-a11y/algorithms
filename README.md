@@ -1,2 +1,2 @@
-this is the correction of exercice 14: Return longest word
+this is the correction of exercice 15: Return word lengths
 
