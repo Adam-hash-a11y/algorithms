@@ -1,1 +1,1 @@
-this is the correction of exercice 20: Sum even numbers
+this is the correction of exercice 21. Group numbers even / odd
