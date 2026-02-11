@@ -1,2 +1,2 @@
-this is the correction of exercice 17: Return numbers < 50
+this is the correction of exercice 18: Return first 3 elements
 
