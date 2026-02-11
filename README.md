@@ -1,1 +1,1 @@
-this is the correction of exercice 11 : Remove negative numbers
+this is the correction of exercice 12 : Return square of numbers
