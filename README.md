@@ -1,1 +1,1 @@
-this is the correction of exercice .25. Find most frequent number
+this is the correction of exercice .26.  Chunk array size 2
