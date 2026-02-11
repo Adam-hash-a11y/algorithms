@@ -1,1 +1,1 @@
-this is the correction of exercice 10 : count array elements
+this is the correction of exercice 11 : Remove negative numbers
