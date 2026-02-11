@@ -1,1 +1,1 @@
-this is the correction of exercice   7 : largest number
+this is the correction of exercice 8 : smallest number
