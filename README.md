@@ -1,1 +1,1 @@
-this is the correction of exercice 24. merge Array and remove duplicates
+this is the correction of exercice .25. Find most frequent number
