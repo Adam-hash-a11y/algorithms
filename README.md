@@ -1,1 +1,1 @@
-this is the correction of exercice .26.  Chunk array size 2
+this is the correction of exercice .27. Rotate Array to the left
