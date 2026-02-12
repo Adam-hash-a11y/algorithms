@@ -1,2 +1,1 @@
-this is the correction of exercice .28. removeFalsyValues
-
+this is the correction of exercice .29. Intersection of arrays
