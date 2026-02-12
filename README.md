@@ -1,2 +1,2 @@
 this is the correction of exercice 22. Flatten nested array
-PS: how to iterate over a nested array that have elments that are not arrays without using the isArray method.
+updated the algorithm logic into a better one to handle cases that includes strings and numbers
