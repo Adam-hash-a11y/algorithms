@@ -1,1 +1,1 @@
-this is the correction of exercice 41 : group words by first letter
+this is the correction of exercice 44 : Unique words from sentences
