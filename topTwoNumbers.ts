@@ -10,8 +10,8 @@ function sortNumberAscending(arr: number[]): number[] {
     }
   }
 
-  return arr;
+  return [arr[arr.length - 1], arr[arr.length - 2]];
 }
 
-const array = [4, 1, 3, 99, 0, -1];
+const array = [10, 40, 30, 20];
 console.log(sortNumberAscending(array));

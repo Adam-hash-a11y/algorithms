@@ -1,1 +1,1 @@
-this is the correction of exercice 35 : sort number assending
+this is the correction of exercice 40 : top 2 Numbers
