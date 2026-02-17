@@ -1,1 +1,1 @@
-this is the correction of exercice 49 : missing number
+this is the correction of exercice 47 : histrogram
