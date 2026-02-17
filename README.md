@@ -1,1 +1,1 @@
-this is the correction of exercice 50 : checkArraySameValues
+this is the correction of exercice 49 : missing number
