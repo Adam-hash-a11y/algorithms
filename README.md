@@ -1,1 +1,1 @@
-this is the correction of exercice 36 : sort objects by age
+this is the correction of exercice 43 : pair Sum To Ten
