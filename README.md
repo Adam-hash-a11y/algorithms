@@ -1,1 +1,1 @@
-this is the correction of exercice 39 : find duplicates
+this is the correction of exercice 38 : total cart price
