@@ -1,1 +1,1 @@
-this is the correction of exercice 46 : Unique sorted numbers
+this is the correction of exercice 34 : flatten All Items
