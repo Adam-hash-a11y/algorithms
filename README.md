@@ -1,1 +1,1 @@
-this is the correction of exercice 43 : pair Sum To Ten
+this is the correction of exercice 42 : sum Per Customer
