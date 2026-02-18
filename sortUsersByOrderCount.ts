@@ -1,4 +1,4 @@
-function sortUserByOrderCount(arr: { o: any }[]) {
+function sortUserByOrderCount(arr: { o: number[] }[]) {
   const tempArray: { userName: string; count: number }[] = [];
   const finalArray: string[] = [];
   for (let i = 0; i < arr.length; i++) {
