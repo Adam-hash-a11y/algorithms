@@ -1,1 +1,1 @@
-this is the correction of exercice 6 : remove duplicates
+this is the correction of exercice 46 : Unique sorted numbers
