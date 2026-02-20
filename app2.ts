@@ -1,11 +1,12 @@
 //create a function that takes a paramter a if it's true
 import isEmail from "validator/lib/isEmail";
 
-function isValidEmail(a: string) {
+export function isValidEmail(a: string) {
   if (isEmail(a)) {
-    console.log(a, "is a valid email");
+    console.log(a);
+    return true;
   } else {
-    console.log(a, "is not a valid email");
+    return false;
   }
 }
 
