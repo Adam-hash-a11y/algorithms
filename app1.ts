@@ -1,7 +1,6 @@
-function biggerThanTen(a: number) {
-  return a > 10 ? true : false;
+export function biggerThanTen(a: number) {
+  return a >= 10;
 }
 
 const array = [5, 12, 8, 20];
-
-console.log(array.filter(biggerThanTen));
+const hello = 'hello ';
