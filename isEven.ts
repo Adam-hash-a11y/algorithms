@@ -1,7 +1,3 @@
-function isEven(a: number) {
-  return a % 2 == 0 ? true : false;
+export function isEven(a: number) {
+  return a % 2 == 0;
 }
-
-const randomArray = [1, 2, 3, 4, 5, 6];
-
-console.log(randomArray.filter(isEven));
