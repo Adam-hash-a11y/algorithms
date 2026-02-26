@@ -1,8 +1,8 @@
-function makeUpperCase(arr: string[]): string[] {
+export function makeUpperCase(arr: string[]): string[] {
   const arrayUppercase: string[] = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    arrayUppercase.push(arr[i].toUpperCase());
+  for (const element of arr) {
+    arrayUppercase.push(element.toUpperCase());
   }
   return arrayUppercase;
 }
