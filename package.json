@@ -4,15 +4,18 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon removeNegativeNumbers.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/validator": "^13.15.10",
+    "jest": "^30.2.0",
     "nodemon": "^3.1.11",
+    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.3"
