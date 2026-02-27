@@ -1,16 +1,12 @@
-function groupEvenOdd(arr: number[]) {
+export function groupEvenOdd(arr: number[]): { even: number[]; odd: number[] } {
   const result: { even: number[]; odd: number[] } = { even: [], odd: [] };
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 == 0) {
-      result.even.push(arr[i]);
+  for (const element of arr) {
+    if (element % 2 == 0) {
+      result.even.push(element);
     } else {
-      result.odd.push(arr[i]);
+      result.odd.push(element);
     }
   }
   return result;
 }
-
-const array = [1, 2, 3, 4, 5, 6];
-
-console.log(groupEvenOdd(array));
