@@ -9,3 +9,4 @@ export function letterFrquency(arr: string[]): { [key: string]: number } {
     }
   }
   return frequencyCount;
+}
