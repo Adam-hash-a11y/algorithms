@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon mergeRemoveDups.ts",
-    "test": "test"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
