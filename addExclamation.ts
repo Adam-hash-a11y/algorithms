@@ -1,18 +1,9 @@
-function addExclamationToString(arr: string[]): string[] {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] += "!";
+export function addExclamationToString(arr: string[]): string[] {
+  const resultArray: string[] = [];
+  for (const element of arr) {
+    resultArray.push(element + "!");
   }
-  return arr;
+  return resultArray;
 }
 
-function addExclamationToStringConcat(arr: string[]): string[] {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = arr[i].concat("!");
-  }
-  return arr;
-}
 
-const array = ["hi", "hello"];
-const array2 = ["hello", "hi"];
-console.log(addExclamationToStringConcat(array));
-console.log(addExclamationToString(array2));
