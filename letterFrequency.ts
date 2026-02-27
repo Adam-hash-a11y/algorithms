@@ -1,4 +1,4 @@
-function letterFrquency(arr: string[]) {
+export function letterFrquency(arr: string[]): { [key: string]: number } {
   const frequencyCount: { [key: string]: number } = { [arr[0]]: 1 };
 
   for (let i = 1; i < arr.length; i++) {
@@ -8,9 +8,4 @@ function letterFrquency(arr: string[]) {
       frequencyCount[arr[i]] = 1;
     }
   }
-  return frequencyCount
-}
-
-const array = ["a", "b", "a"];
-
-console.log(letterFrquency(array))
+  return frequencyCount;
