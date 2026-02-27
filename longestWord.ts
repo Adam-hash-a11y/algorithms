@@ -1,13 +1,9 @@
-function longestWordInArray(arr: string[]): string {
+export function longestWordInArray(arr: string[]): string {
   let longestString: string = "";
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].length > longestString.length) {
-      longestString = arr[i];
+  for (const element of arr) {
+    if (element.length > longestString.length) {
+      longestString = element;
     }
   }
   return longestString;
 }
-
-const array: string[] = ["car", "motorcycle", "bike"];
-
-console.log(longestWordInArray(array));
