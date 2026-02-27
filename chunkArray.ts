@@ -1,7 +1,7 @@
-function chunckByTwo(arr: number[]) {
-  const chunckedArray = [];
-  let tempArray = [arr[0]];
-  for (let i = 1; i < arr.length; i++) {
+export function chunckByTwo(arr: number[]): number[][] {
+  const chunckedArray: number[][] = [];
+  let tempArray: number[] = [];
+  for (let i = 0; i < arr.length; i++) {
     tempArray.push(arr[i]);
     if (i % 2 !== 0) {
       chunckedArray.push(tempArray);
@@ -13,6 +13,3 @@ function chunckByTwo(arr: number[]) {
   return chunckedArray;
 }
 
-const array = [1, 2, 3, 4, 5, 6, 7];
-
-console.log(chunckByTwo(array));
