@@ -1,23 +1,9 @@
-function rotateLeft(arr: number[]) {
-  let temp = arr.shift()!;
-  arr.push(temp);
-
-  return arr;
-}
-
-function rotateLeftVanilla(arr: number[]) {
-  for (let i = 0; i < arr.length - 1; i++) {
-    let temp = arr[i];
-    arr[i] = arr[i + 1];
-    arr[i + 1] = temp;
+export function rotateLeft(arr: number[]): number[] {
+  const result: number[] = [...arr];
+  for (let i = 0; i < result.length - 1; i++) {
+    let temp = result[i];
+    result[i] = result[i + 1];
+    result[i + 1] = temp;
   }
-  return arr;
+  return result;
 }
-
-const array = [1, 2, 3, 4];
-
-const array2 = [11, 12, 13, 14];
-console.log("initial array", array, "\n Rotated Array");
-console.log(rotateLeft(array));
-console.log("initial array", array2, "\n Rotated Array Vanilla");
-console.log(rotateLeftVanilla(array2));
