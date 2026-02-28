@@ -1,14 +1,12 @@
-function flattenAllItems(arr: { items: any[] }[]): any[] {
+export function flattenAllItems(arr: { items: number[] }[]): number[] {
   const flattedArray: number[] = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    let item = arr[i];
+  for (const element of arr) {
+    let item = element;
     console.log(item);
-    for (let j = 0; j < item.items.length; j++) {
-      flattedArray.push(item.items[j]);
+    for (const element of item.items) {
+      flattedArray.push(element);
     }
   }
   return flattedArray;
 }
-const array = [{ items: [1, 2] }, { items: [2] }, { items: [3, "aa"] }];
-console.log(flattenAllItems(array));
