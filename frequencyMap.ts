@@ -1,8 +1,8 @@
-function frequencyMap(arr: any[]) {
-  const mappedArray: { [x: number]: number } = { [arr[0]]: 1 };
+export function frequencyMap(arr: number[]): { [x: number]: number } {
+  const mappedArray: { [x: number]: number } = {};
 
-  for (let i = 1; i < arr.length; i++) {
-    let item = arr[i];
+  for (const element of arr) {
+    let item = element;
     if (mappedArray[item]) {
       mappedArray[item] += 1;
     } else {
@@ -12,6 +12,3 @@ function frequencyMap(arr: any[]) {
 
   return mappedArray;
 }
-
-const array = [1, 2, 3, 3, 3, 2];
-console.log(frequencyMap(array));
