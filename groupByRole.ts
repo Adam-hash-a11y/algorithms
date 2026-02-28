@@ -1,10 +1,12 @@
-function groupByRole(arr: { [key: string]: string }[]) {
-  const mappedElements: { [key: string]: {}[] } = { [arr[0].role]: [arr[0]] };
-  for (let i = 1; i < arr.length; i++) {
-    if (mappedElements[arr[i].role]) {
-      mappedElements[arr[i].role].push(arr[i]);
+export function groupByRole(arr: { role: string }[]): {
+  [key: string]: { role: string }[];
+} {
+  const mappedElements: { [key: string]: { role: string }[] } = {};
+  for (const element of arr) {
+    if (mappedElements[element.role]) {
+      mappedElements[element.role].push(element);
     } else {
-      mappedElements[arr[i].role] = [arr[i]];
+      mappedElements[element.role] = [element];
     }
   }
   return mappedElements;
@@ -18,4 +20,5 @@ const array = [
   { role: "a" },
   { role: "b" },
 ];
+console.log(array);
 console.log(groupByRole(array));
