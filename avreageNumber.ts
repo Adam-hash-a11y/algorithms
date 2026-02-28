@@ -1,21 +1,21 @@
-function averageNumber(arr: number[]) {
+export function averageNumber(arr: number[]) {
   let sum: number = 0;
   let avg: number = 0;
-  let mostCloseToAverage = 0;
+  let mostCloseToAverage = arr[0];
   let distance = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
+  for (const element of arr) {
+    sum += element;
   }
   avg = sum / arr.length;
   let minDistance = Math.abs(arr[0] - avg);
-  for (let i = 0; i < arr.length; i++) {
-    distance = Math.abs(arr[i] - avg);
+  for (const element of arr) {
+    distance = Math.abs(element - avg);
     if (distance < minDistance) {
       minDistance = distance;
-      mostCloseToAverage = arr[i];
+      mostCloseToAverage = element;
     }
   }
   return mostCloseToAverage;
 }
-const arr = [6, 4, 2];
+const arr = [4, 6, 2];
 console.log(averageNumber(arr));
