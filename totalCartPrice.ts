@@ -1,18 +1,15 @@
-function totaleCartPrice(arr: { [key: string]: number }[]) {
+export function totaleCartPrice(arr: { p: number; q: number }[]): number {
   let total: number = 0;
   let totalPerObject: number = 1;
-  for (let i = 0; i < arr.length; i++) {
-    for (let key in arr[i]) {
-      totalPerObject *= arr[i][key];
+  for (const element of arr) {
+    for (let key in element) {
+      totalPerObject *= element[key as keyof typeof element];
     }
-    total += totalPerObject;
+    total += element.p * element.q;
     totalPerObject = 1;
   }
   return total;
 }
 
-const array = [
-  { p: 10, q: 2 },
-  { p: 5, q: 3 },
-];
+const array: { p: number; q: number }[] = [];
 console.log(totaleCartPrice(array));
