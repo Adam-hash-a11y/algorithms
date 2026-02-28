@@ -8,6 +8,3 @@ export function findDuplicates(arr: number[]): number[] {
   }
   return arrayOfDuplicates;
 }
-
-const array: number[] = [];
-console.log(findDuplicates(array));
