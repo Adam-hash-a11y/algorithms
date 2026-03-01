@@ -1,4 +1,4 @@
-export function wordGroups(arr: string[]) {
+export function wordGroups(arr: string[]): { [key: string]: string[] } {
   let groupedWords: { [key: string]: string[] } = {};
   for (const element of arr) {
     let firstLetterOfelement = element[0];
@@ -10,5 +10,3 @@ export function wordGroups(arr: string[]) {
   }
   return groupedWords;
 }
-
-
