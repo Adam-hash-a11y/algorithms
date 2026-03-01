@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app1.ts",
+    "dev": "nodemon app2.ts",
     "test": "jest",
     "eslint": "npx eslint ."
   },
@@ -23,7 +23,7 @@
     "globals": "^17.3.0",
     "jest": "^30.2.0",
     "jiti": "^2.6.1",
-    "nodemon": "^3.1.11",
+    "nodemon": "^3.1.14",
     "prettier": "^3.8.1",
     "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
@@ -33,5 +33,8 @@
   },
   "dependencies": {
     "validator": "^13.15.26"
+  },
+  "overrides": {
+    "minimatch": "^10.2.1"
   }
 }
