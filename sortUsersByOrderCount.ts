@@ -1,13 +1,13 @@
-function sortUserByOrderCount(arr: { o: number[] }[]) {
+export function sortUserByOrderCount(arr: { o: number[] }[]): string[] {
   const tempArray: { userName: string; count: number }[] = [];
   const finalArray: string[] = [];
   for (let i = 0; i < arr.length; i++) {
-    let userName = "user" + String.fromCharCode(65 + i);
+    let userName = "user" + String.fromCodePoint(65 + i);
     let count = arr[i].o.length;
     tempArray.push({ userName, count });
   }
 
-  for (let i = 0; i < tempArray.length; i++) {
+  for (const _ of tempArray) {
     for (let j = 0; j < tempArray.length - 1; j++) {
       if (tempArray[j].count < tempArray[j + 1].count) {
         let temp: { userName: string; count: number } = tempArray[j];
@@ -16,14 +16,8 @@ function sortUserByOrderCount(arr: { o: number[] }[]) {
       }
     }
   }
-
-  for (let i = 0; i < tempArray.length; i++) {
-    finalArray.push(tempArray[i].userName);
+  for (const element of tempArray) {
+    finalArray.push(element.userName);
   }
-
   return finalArray;
 }
-
-let array = [{ o: [1, 2] }, { o: [1] }, { o: [1, 2, 5, 6] }];
-
-console.log(sortUserByOrderCount(array));
