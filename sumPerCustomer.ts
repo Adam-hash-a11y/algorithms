@@ -1,8 +1,9 @@
-function sumPerCumstomer(arr: { c: string; a: number }[]) {
+export function sumPerCumstomer(arr: { c: string; a: number }[]): {
+  [key: string]: number;
+} {
   let resultObj: { [key: string]: number } = {};
-  for (let i = 0; i < arr.length; i++) {
-    let item = arr[i];
-    console.log(item.c);
+  for (const element of arr) {
+    const item = element;
     if (resultObj[item.c]) {
       resultObj[item.c] += item.a;
     } else {
@@ -11,11 +12,3 @@ function sumPerCumstomer(arr: { c: string; a: number }[]) {
   }
   return resultObj;
 }
-
-let array = [
-  { c: "A", a: 10 },
-  { c: "A", a: 5 },
-  { c: "B", a: 20 },
-  { c: "B", a: 10 },
-];
-console.log(sumPerCumstomer(array));
