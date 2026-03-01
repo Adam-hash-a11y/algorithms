@@ -1,21 +1,15 @@
-function checkArraySameValues(arr: number[], arr2: number[]) {
-  if (arr.length != arr2.length) {
-    return false;
-  } else {
+export function checkArraySameValues(arr: number[], arr2: number[]): boolean {
+  if (arr.length == arr2.length) {
     let i: number = 0;
 
-    while (i < arr.length && arr2.indexOf(arr[i]) != -1) {
+    while (i < arr.length && arr2.includes(arr[i])) {
       i++;
     }
-    if (i < arr.length && arr2.indexOf(arr[i]) == -1) {
-      console.log(arr[i]);
+    if (i < arr.length && !arr2.includes(arr[i])) {
       return false;
     }
+  } else {
+    return false;
   }
   return true;
 }
-
-const array1 = [4, 1, 2, 5];
-const array2 = [3, 2, 1, 4];
-
-console.log(checkArraySameValues(array1, array2));
