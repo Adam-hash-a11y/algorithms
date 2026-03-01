@@ -1,20 +1,14 @@
-function removeEmptyObject(arr: {}[]) {
-  let cleanArray = [];
+export function removeEmptyObject(arr: {}[]): { [key: string]: number }[] {
+  const cleanArray = [];
   let isEmpty: boolean = true;
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-
-    for (let key in arr[i]) {
-      console.log(key, "this is key");
+  for (const element of arr) {
+    for (let _ in element) {
       isEmpty = false;
     }
-    if (isEmpty == false) {
-      cleanArray.push(arr[i]);
+    if (!isEmpty) {
+      cleanArray.push(element);
       isEmpty = true;
     }
   }
   return cleanArray;
 }
-
-const array = [{}, { a: 1, b: 2 }, {}, {}];
-console.log(removeEmptyObject(array));
