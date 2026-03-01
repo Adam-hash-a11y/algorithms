@@ -1,15 +1,14 @@
-function wordGroups(arr: string[]) {
+export function wordGroups(arr: string[]) {
   let groupedWords: { [key: string]: string[] } = {};
-  for (let i = 0; i < arr.length; i++) {
-    let firstLetterOfelement = arr[i][0];
+  for (const element of arr) {
+    let firstLetterOfelement = element[0];
     if (groupedWords[firstLetterOfelement]) {
-      groupedWords[firstLetterOfelement].push(arr[i]);
+      groupedWords[firstLetterOfelement].push(element);
     } else {
-      groupedWords[firstLetterOfelement] = [arr[i]];
+      groupedWords[firstLetterOfelement] = [element];
     }
   }
   return groupedWords;
 }
 
-const array = ["apple", "car", "apricot", "banana", "balha"];
-console.log(wordGroups(array));
+
