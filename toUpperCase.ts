@@ -6,6 +6,3 @@ export function makeUpperCase(arr: string[]): string[] {
   }
   return arrayUppercase;
 }
-
-const array: string[] = ["adam", "hamdi"];
-console.log(makeUpperCase(array));
