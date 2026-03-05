@@ -1,4 +1,4 @@
-function sortUserByOrderCount(arr: { o: number[] }[]) {
+export function sortUserByOrderCount(arr: { o: number[] }[]) {
   const tempArray: { userName: string; count: number }[] = [];
   const finalArray: string[] = [];
   for (let i = 0; i < arr.length; i++) {
@@ -23,7 +23,3 @@ function sortUserByOrderCount(arr: { o: number[] }[]) {
 
   return finalArray;
 }
-
-const array = [{ o: [1, 2] }, { o: [1] }, { o: [1, 2, 5, 6] }];
-
-console.log(sortUserByOrderCount(array));
