@@ -3,17 +3,14 @@ export function belowAvg(arr: number[]): number[] {
   let avg = 0;
   let sum = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
+  for (const element of arr) {
+    sum += element;
   }
   avg = sum / arr.length;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > avg) {
-      resultArray.push(arr[i]);
+  for (const element of arr) {
+    if (element > avg) {
+      resultArray.push(element);
     }
   }
   return resultArray;
 }
-
-const array = [10, 20, 30];
-console.log(belowAvg(array));
