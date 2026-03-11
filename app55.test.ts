@@ -14,4 +14,17 @@ describe("test function deeoFlat", () => {
 
     expect(result).toEqual([1, 2, 3]);
   });
+  test("should return an empty array if the given array is empty", () => {
+    //Given
+
+    const array: number[] = [];
+
+    //When
+
+    const result = deepFlat(array);
+
+    //Then
+
+    expect(result).toEqual([]);
+  });
 });
