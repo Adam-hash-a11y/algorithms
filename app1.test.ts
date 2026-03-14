@@ -25,10 +25,10 @@ describe("test function bigger than", () => {
 
   test("should return true if the number is equal to 10", () => {
     // given
-    const b = 10;
+    const c = 10;
 
     // when
-    const result = biggerThanTen(b);
+    const result = biggerThanTen(c);
 
     // then
     expect(result).toBeTruthy();
