@@ -8,6 +8,7 @@ export function sortUserByOrderCount(arr: { o: number[] }[]) {
   }
 
   for (let i = 0; i < tempArray.length - 1; i++) {
+    const abc = 0;
     for (let j = 0; j < tempArray.length - 1 - i; j++) {
       if (tempArray[j].count < tempArray[j + 1].count) {
         const temp = tempArray[j];
