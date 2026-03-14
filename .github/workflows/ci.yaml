@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  test and check eslint:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
-
       - name: check eslint
         run: npm run eslint
+
+      - name: Run tests
+        run: npm test
