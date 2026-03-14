@@ -30,7 +30,7 @@ jobs:
 
   check-eslint:
     runs-on: ubuntu-latest
-    needs: steup
+    needs: setup
 
     steps:
      
