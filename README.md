@@ -4,3 +4,4 @@ solved this algorithms using 2 ways :
 
 1. using the pop method
 2. using a backward index and pushing each element in a new array
+
