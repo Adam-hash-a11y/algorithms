@@ -2,7 +2,7 @@ name: CI algorithms
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   test:
@@ -22,3 +22,6 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: check eslint
+        run: npm run eslint
