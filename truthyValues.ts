@@ -1,4 +1,6 @@
-export function truthyValues(arr: any[]): number {
+type arrayTypes = number | boolean | string | undefined;
+
+export function truthyValues(arr: arrayTypes[]): number {
   let truthyValues: number = 0;
   for (const element of arr) {
     if (
