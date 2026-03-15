@@ -1,10 +1,12 @@
 import { truthyValues } from "./truthyValues";
 
+type arrayTypes = number | boolean | string | undefined;
+
 describe("test truthyValues function", () => {
   test("should return the number of truthy values", () => {
     //Given
 
-    const array = [0, 1, true, false, 2];
+    const array: arrayTypes[] = [0, 1, true, false, 2];
 
     //When
 
@@ -17,7 +19,7 @@ describe("test truthyValues function", () => {
   test("should return 0 if there are no truthy values", () => {
     //Given
 
-    const array = [0, undefined, false];
+    const array: arrayTypes[] = [0, undefined, false];
 
     //When
 
@@ -30,7 +32,7 @@ describe("test truthyValues function", () => {
   test("should return 0 if they array is empty", () => {
     //Given
 
-    const array: any[] = [];
+    const array: arrayTypes[] = [];
 
     //When
 
