@@ -1,4 +1,4 @@
-export function nestedComments(arr: { r: {}[] }[]): number {
+export function nestedComments(arr: { r: object[] }[]): number {
   let comments = 0;
   for (const element of arr) {
     comments += element.r.length;
