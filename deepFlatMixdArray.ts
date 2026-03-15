@@ -1,4 +1,5 @@
-export function deepFlatMixedArray(arr: any[], result: number[] = []) {
+type flatArray = number | (number | (number | number[])[])[];
+export function deepFlatMixedArray(arr: flatArray[], result: number[] = []) {
   for (const element of arr) {
     if (Array.isArray(element)) {
       deepFlatMixedArray(element, result);
