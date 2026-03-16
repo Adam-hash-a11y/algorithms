@@ -1,7 +1,22 @@
-function biggerThanTen(a: number) {
-  return a > 10 ? true : false;
+function mostFrequent(arr: number[]) {
+  const resultObj: { [key: string]: number } = {};
+  for (const element of arr) {
+    if (resultObj[element]) {
+      resultObj[element] += 1;
+    } else {
+      resultObj[element] = 1;
+    }
+  }
+  let mostfq = 0;
+  let mostfqValue = "";
+  for (const [key, value] of Object.entries(resultObj)) {
+    if (value > mostfq) {
+      mostfq = value;
+      mostfqValue = key;
+    }
+  }
+  return mostfqValue;
 }
 
-const array = [5, 12, 8, 20];
-
-console.log(array.filter(biggerThanTen));
+const arr11 = [1, 2, 2, 3, 3, 3];
+console.log(mostFrequent(arr11))
