@@ -41,41 +41,7 @@ npm run test
 |---|---|
 | 1 - 30 | Simple |
 | 31 - 70 | Medium |
-| 71 - 100 | Medium+ |
-
----
-
-## Examples
-
-**Exercise 1 — Return numbers greater than 10**
-```typescript
-Input:  [5, 12, 8, 20]
-Output: [12, 20]
-```
-
-**Exercise 25 — Find most frequent number**
-```typescript
-Input:  [1, 2, 2, 3, 3, 3]
-Output: 3
-```
-
-**Exercise 43 — Pairs summing to 10**
-```typescript
-Input:  [1, 9, 2, 8, 5]
-Output: [[1, 9], [2, 8]]
-```
-
-**Exercise 76 — Longest increasing sequence**
-```typescript
-Input:  [1, 2, 3, 1, 2]
-Output: 3
-```
-
-**Exercise 100 — Validate increasing array**
-```typescript
-Input:  [1, 2, 3, 4]
-Output: true
-```
+| 71 - 100 | Hard |
 
 ---
 
